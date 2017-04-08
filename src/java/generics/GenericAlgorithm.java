@@ -1,4 +1,4 @@
-// this file reminds me of C operator overloading
+// this file reminds me of C++ operator overloading
 package generics;
 
 public class GenericAlgorithm 
@@ -12,10 +12,10 @@ public class GenericAlgorithm
         	//if (e > elem)  // compiler error, (>) applies only to primitive types
             //	++count;
     	return count;
-	}*/
+	}*/ // this code came from http://docs.oracle.com/javase/tutorial/java/generics/boundedTypeParams.html
 
 	// To fix the problem, use a type parameter bounded by the Comparable<T> interface:
-	public interface Comparable<T> 
+	public interface Comparable<T> // https://docs.oracle.com/javase/7/docs/api/java/lang/Comparable.html 
 	{
     	public int compareTo(T o);
 	}
